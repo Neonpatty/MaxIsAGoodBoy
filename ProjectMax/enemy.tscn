@@ -1,0 +1,93 @@
+[gd_scene load_steps=13 format=3 uid="uid://bnht6fcaq1q1t"]
+
+[ext_resource type="Texture2D" uid="uid://dbf1o8mfj2wv2" path="res://art/Enemy/idle.png" id="1_43nlo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sk6di"]
+atlas = ExtResource("1_43nlo")
+region = Rect2(40, 62, 26, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kwamc"]
+atlas = ExtResource("1_43nlo")
+region = Rect2(40, 186, 26, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yx8ix"]
+atlas = ExtResource("1_43nlo")
+region = Rect2(40, 310, 26, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3d2v0"]
+atlas = ExtResource("1_43nlo")
+region = Rect2(40, 434, 26, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6aq4"]
+atlas = ExtResource("1_43nlo")
+region = Rect2(40, 558, 26, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jqwan"]
+atlas = ExtResource("1_43nlo")
+region = Rect2(40, 682, 26, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6dehp"]
+atlas = ExtResource("1_43nlo")
+region = Rect2(40, 806, 26, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6aacx"]
+atlas = ExtResource("1_43nlo")
+region = Rect2(40, 930, 26, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nhwg"]
+atlas = ExtResource("1_43nlo")
+region = Rect2(40, 1054, 26, 62)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lkck6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sk6di")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kwamc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yx8ix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3d2v0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6aq4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jqwan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6dehp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6aacx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nhwg")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ajhbf"]
+radius = 0.126873
+height = 0.442076
+
+[node name="Enemy" type="CharacterBody3D"]
+
+[node name="Pivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.316742, 0)
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="Pivot"]
+billboard = 2
+sprite_frames = SubResource("SpriteFrames_lkck6")
+animation = &"Idle"
+frame_progress = 0.966911
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.201064, 0)
+shape = SubResource("CapsuleShape3D_ajhbf")

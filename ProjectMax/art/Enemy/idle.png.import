@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnq8qi468i1sd"
-path.s3tc="res://.godot/imported/_Idle.png-0a5a61693ac8ae506d4a6d81ed0c10ba.s3tc.ctex"
+uid="uid://dbf1o8mfj2wv2"
+path.s3tc="res://.godot/imported/idle.png-3161819949196bc7af751371f93ea43d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://_Idle.png"
-dest_files=["res://.godot/imported/_Idle.png-0a5a61693ac8ae506d4a6d81ed0c10ba.s3tc.ctex"]
+source_file="res://art/Enemy/idle.png"
+dest_files=["res://.godot/imported/idle.png-3161819949196bc7af751371f93ea43d.s3tc.ctex"]
 
 [params]
 
