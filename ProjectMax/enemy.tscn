@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://bnht6fcaq1q1t"]
+[gd_scene load_steps=14 format=3 uid="uid://bnht6fcaq1q1t"]
 
 [ext_resource type="Texture2D" uid="uid://dbf1o8mfj2wv2" path="res://art/Enemy/idle.png" id="1_43nlo"]
+[ext_resource type="Script" path="res://enemy.cs" id="1_esq7h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sk6di"]
 atlas = ExtResource("1_43nlo")
@@ -78,6 +79,7 @@ radius = 0.126873
 height = 0.442076
 
 [node name="Enemy" type="CharacterBody3D"]
+script = ExtResource("1_esq7h")
 
 [node name="Pivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.316742, 0)
@@ -86,7 +88,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.316742, 0)
 billboard = 2
 sprite_frames = SubResource("SpriteFrames_lkck6")
 animation = &"Idle"
-frame_progress = 0.966911
+frame_progress = 0.561726
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.201064, 0)
