@@ -86,6 +86,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.316742, 0)
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="Pivot"]
 billboard = 2
+shaded = true
 sprite_frames = SubResource("SpriteFrames_lkck6")
 animation = &"Idle"
 frame_progress = 0.561726
